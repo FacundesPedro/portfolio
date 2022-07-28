@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import ReactFullpage from '@fullpage/react-fullpage'
 import {IApp} from './interfaces';
+import { SectionWrapper } from './components/Section';
 
 function App() {
   const sections = useState(1);
@@ -11,9 +12,9 @@ function App() {
       render={
         ({state,fullpageApi}) => (
           <ReactFullpage.Wrapper>
-            <div className="section">
+            <SectionWrapper styles={{backgroundColor:'blue'}}>
               <h2>section 1</h2>
-            </div>
+            </SectionWrapper>
             <div className="section">
               <h2>section 2</h2>
             </div>

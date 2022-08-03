@@ -7,7 +7,8 @@ interface SectionComponent {
 }
 
 const sectionDivContainer: CSSProperties = {
-    width:'100vw'
+    width:'100vw',
+    justifyContent:'unset',
 }
 
 export const SectionWrapper = ({children,styles}: SectionComponent) => {
